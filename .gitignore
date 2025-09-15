@@ -1,0 +1,55 @@
+# Node
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.seed
+
+# Build outputs and caches
+dist/
+.next/
+out/
+.turbo/
+.cache/
+.parcel-cache/
+.rollup.cache/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+
+.env
+.env.*
+!.env.example
+dms/**/.env
+dms/**/.env.*
+!dms/**/.env.example
+.envrc
+.direnv/
+
+# Editor and OS cruft
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker and local data scratch
+data/
+docker-data/
+minio-data/
+postgres-data/
+redis-data/
+
+# Framework specific
+.vercel/
+cypress/screenshots/
+cypress/videos/
+
+# Generated artifacts
+*.tgz
+*.zip

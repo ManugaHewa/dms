@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["es2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@dms/db": ["dms/packages/db/src/index.ts"],
+      "@dms/core/*": ["dms/packages/core/src/*"],
+      "@dms/env/*": ["dms/packages/env/src/*"],
+      "@dms/storage/*": ["dms/packages/storage/src/*"],
+      "@dms/email/*": ["dms/packages/email/src/*"]
+    }
+  }
+}

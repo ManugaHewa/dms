@@ -1,0 +1,3 @@
+packages:
+  - "dms/apps/*"
+  - "dms/packages/*"
