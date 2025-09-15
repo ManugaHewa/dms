@@ -1,42 +1,32 @@
 # Node
 node_modules/
+dms/**/node_modules/
 logs/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-*.pid
-*.seed
 
 # Build outputs and caches
 dist/
+dms/**/dist/
 .next/
+dms/**/.next/
 out/
 .turbo/
+dms/**/.turbo/
 .cache/
-.parcel-cache/
-.rollup.cache/
 *.tsbuildinfo
 coverage/
-.nyc_output/
+dms/**/coverage/
 
+# Env files (keep examples tracked)
 .env
 .env.*
-!.env.example
 dms/**/.env
 dms/**/.env.*
+!.env.example
 !dms/**/.env.example
 .envrc
 .direnv/
-
-# Editor and OS cruft
-.vscode/
-.idea/
-*.swp
-.DS_Store
-Thumbs.db
-desktop.ini
 
 # Docker and local data scratch
 data/
@@ -45,11 +35,22 @@ minio-data/
 postgres-data/
 redis-data/
 
+# Editor and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
 # Framework specific
 .vercel/
 cypress/screenshots/
 cypress/videos/
 
-# Generated artifacts
+# Generated archives
 *.tgz
 *.zip
+
+# Never ignore Prisma migrations
+!dms/packages/db/prisma/migrations/**
