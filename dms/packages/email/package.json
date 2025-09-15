@@ -1,0 +1,10 @@
+{
+  "name": "@dms/email",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "nodemailer": "6.9.14",
+    "@dms/env": "0.0.1"
+  }
+}
